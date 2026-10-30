@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Waste Management and Recycling System">
+    <title>E-WASTE | Management & Recycling System</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="container nav-wrapper">
+
+        <a href="#home" class="logo company-logo">
+    <img src="assets/logo.jpeg"
+         alt="E-WASTE Management and Recycling System logo">
+         </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#waste-types">E-Waste Types</a>
+            <a href="#pickup">Pickup</a>
+            <a href="#tracking">Track</a>
+            <a href="#centers">Centers</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="login-btn" onclick="openAuth('login')">Login</button>
+            <button class="primary-btn small-btn" onclick="scrollToSection('pickup')">
+                Recycle Now
+            </button>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+    </div>
+</header>
+
+
+<!-- ================= HOME ================= -->
+<main>
+
+<section class="hero section" id="home">
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+            <div class="badge">
+                🌱 Building a cleaner tomorrow
+            </div>
+
+            <h1>
+                Give Your E-Waste
+                <span>A Second Life.</span>
+            </h1>
+
+            <p>
+                Recycle your old electronics responsibly.
+                Schedule a pickup, track your recycling journey
+                and earn rewards while helping the planet.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="scrollToSection('pickup')">
+                    Recycle Now →
+                </button>
+
+                <button class="outline-btn" onclick="scrollToSection('how-it-works')">
+                    How It Works
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <strong>850+</strong>
+                    <span>Kg Recycled</span>
+                </div>
+
+                <div>
+                    <strong>1,250+</strong>
+                    <span>Happy Users</span>
+                </div>
+
+                <div>
+                    <strong>98%</strong>
+                    <span>Responsible Recycling</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="hero-visual">
+            <div class="eco-circle">
+                <div class="device-card phone">📱</div>
+                <div class="device-card laptop">💻</div>
+                <div class="device-card battery">🔋</div>
+                <div class="recycle-symbol">♻</div>
+            </div>
+
+            <div class="floating-card">
+                <span class="check">✓</span>
+                <div>
+                    <strong>Eco Friendly</strong>
+                    <small>Responsible recycling</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ================= E-WASTE TYPES ================= -->
+<section class="section waste-types-section" id="waste-types">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">KNOW YOUR E-WASTE</span>
+
+            <h2>What Can You Recycle?</h2>
+
+            <p>
+                Laptops, phones, computers, monitors, appliances and batteries
+                should be recycled responsibly—not with regular waste.
+            </p>
+        </div>
+
+        <figure class="waste-types-poster">
+            <img src="assets/ewaste.jpeg"
+                 alt="Types of e-waste including laptops, phones, computers, monitors, printers, televisions, appliances and batteries">
+
+            <figcaption>
+                Recycle today, protect tomorrow — every device deserves responsible handling.
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section class="section light-section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">OUR SERVICES</span>
+            <h2>Everything You Need to Recycle</h2>
+            <p>
+                Simple and reliable solutions for managing your electronic waste.
+            </p>
+        </div>
+
+        <div class="cards-grid">
+
+            <div class="service-card">
+                <div class="card-icon">🚚</div>
+                <h3>E-Waste Pickup</h3>
+                <p>
+                    Book a convenient pickup from your home or workplace.
+                </p>
+                <button class="text-btn" onclick="scrollToSection('pickup')">
+                    Schedule Pickup →
+                </button>
+            </div>
+
+            <div class="service-card">
+                <div class="card-icon">♻️</div>
+                <h3>Responsible Recycling</h3>
+                <p>
+                    Your electronic waste is processed through responsible recycling.
+                </p>
+                <button class="text-btn" onclick="scrollToSection('about')">
+                    Learn More →
+                </button>
+            </div>
+
+            <div class="service-card">
+                <div class="card-icon">🎁</div>
+                <h3>Rewards & Points</h3>
+                <p>
+                    Earn points when you recycle and unlock exciting rewards.
+                </p>
+                <button class="text-btn" onclick="scrollToSection('rewards')">
+                    View Rewards →
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" id="how-it-works">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">HOW IT WORKS</span>
+            <h2>Recycle in 4 Simple Steps</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Book</h3>
+                <p>Submit your e-waste pickup request.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Collect</h3>
+                <p>Our collection team picks up your e-waste.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Recycle</h3>
+                <p>Your electronics are sent for responsible recycling.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">04</div>
+                <h3>Earn</h3>
+                <p>Receive reward points for your contribution.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section class="section light-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-visual">
+            <div class="about-icon">🌍</div>
+            <div class="about-number">98%</div>
+            <p>Responsible Processing</p>
+        </div>
+
+        <div class="about-content">
+
+            <span class="section-tag">ABOUT US</span>
+
+            <h2>Making E-Waste Recycling Simple.</h2>
+
+            <p>
+                EcoCycle is designed to make electronic waste management
+                simple, accessible and responsible.
+            </p>
+
+            <p>
+                From pickup scheduling to tracking and rewards,
+                our platform brings the entire recycling journey
+                into one simple experience.
+            </p>
+
+            <div class="check-list">
+                <div>✓ Easy pickup scheduling</div>
+                <div>✓ Transparent tracking</div>
+                <div>✓ Reward points</div>
+                <div>✓ Responsible recycling</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PICKUP ================= -->
+<section class="section" id="pickup">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">E-WASTE PICKUP</span>
+            <h2>Schedule a Pickup</h2>
+            <p>Tell us what you want to recycle and where we should collect it.</p>
+        </div>
+
+        <form class="pickup-form" id="pickupForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="pickupName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="pickupPhone" placeholder="Enter phone number" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>E-Waste Type</label>
+
+                    <select id="wasteType" required>
+                        <option value="">Select type</option>
+                        <option>Mobile / Tablet</option>
+                        <option>Laptop / Computer</option>
+                        <option>TV / Monitor</option>
+                        <option>Battery</option>
+                        <option>Other Electronics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity" min="1" placeholder="Quantity" required>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label>Pickup Address</label>
+                <textarea id="address" rows="4" placeholder="Enter complete address" required></textarea>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date" id="pickupDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Time</label>
+
+                    <select id="pickupTime" required>
+                        <option value="">Select time</option>
+                        <option>9:00 AM - 11:00 AM</option>
+                        <option>11:00 AM - 1:00 PM</option>
+                        <option>2:00 PM - 4:00 PM</option>
+                        <option>4:00 PM - 6:00 PM</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button class="primary-btn submit-btn" type="submit">
+                Schedule Pickup →
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- ================= TRACKING ================= -->
+<section class="section light-section" id="tracking">
+
+    <div class="container tracking-container">
+
+        <div class="section-heading">
+            <span class="section-tag">TRACK PICKUP</span>
+            <h2>Track Your Recycling Journey</h2>
+            <p>Enter your pickup ID to check the current status.</p>
+        </div>
+
+        <div class="track-box">
+
+            <input type="text" id="trackingId" placeholder="Example: EW-1001">
+
+            <button class="primary-btn" onclick="trackPickup()">
+                Track Pickup
+            </button>
+
+        </div>
+
+        <div class="tracking-result" id="trackingResult">
+
+            <div class="tracking-header">
+                <div>
+                    <small>Pickup ID</small>
+                    <h3 id="resultId">EW-1001</h3>
+                </div>
+
+                <span class="status-badge">In Progress</span>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item active">
+                    <div class="timeline-dot">✓</div>
+                    <div>
+                        <strong>Request Submitted</strong>
+                        <small>Your request has been received.</small>
+                    </div>
+                </div>
+
+                <div class="timeline-item active">
+                    <div class="timeline-dot">✓</div>
+                    <div>
+                        <strong>Pickup Confirmed</strong>
+                        <small>Your pickup has been confirmed.</small>
+                    </div>
+                </div>
+
+                <div class="timeline-item active">
+                    <div class="timeline-dot">●</div>
+                    <div>
+                        <strong>Collector Assigned</strong>
+                        <small>Collector is being assigned.</small>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">4</div>
+                    <div>
+                        <strong>E-Waste Collected</strong>
+                        <small>Waiting for collection.</small>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">5</div>
+                    <div>
+                        <strong>Recycling Completed</strong>
+                        <small>Final recycling process.</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= RECYCLING CENTERS ================= -->
+<section class="section" id="centers">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">RECYCLING CENTERS</span>
+            <h2>Find a Recycling Center</h2>
+            <p>Explore recycling centers and choose the one convenient for you.</p>
+        </div>
+
+        <div class="center-search">
+            <input type="text" id="centerSearch" placeholder="Search by location or center name...">
+            <button class="primary-btn" onclick="searchCenters()">Search</button>
+        </div>
+
+        <div class="center-grid" id="centerGrid">
+
+            <div class="center-card" data-search="nashik eco recycle">
+                <div class="center-icon">🏢</div>
+                <h3>Eco Recycle Center</h3>
+                <p>📍 Nashik, Maharashtra</p>
+                <span>Open • 9 AM - 6 PM</span>
+                <button class="outline-btn full-btn">View Details</button>
+            </div>
+
+            <div class="center-card" data-search="green earth recycling pune">
+                <div class="center-icon">♻️</div>
+                <h3>Green Earth Recycling</h3>
+                <p>📍 Pune, Maharashtra</p>
+                <span>Open • 9 AM - 7 PM</span>
+                <button class="outline-btn full-btn">View Details</button>
+            </div>
+
+            <div class="center-card" data-search="smart recycle mumbai">
+                <div class="center-icon">🌱</div>
+                <h3>Smart Recycle Hub</h3>
+                <p>📍 Mumbai, Maharashtra</p>
+                <span>Open • 10 AM - 6 PM</span>
+                <button class="outline-btn full-btn">View Details</button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= REWARDS ================= -->
+<section class="section light-section" id="rewards">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">REWARDS</span>
+            <h2>Recycle More. Earn More.</h2>
+            <p>Every responsible recycling action can earn reward points.</p>
+        </div>
+
+        <div class="reward-summary">
+
+            <div>
+                <span>Your Reward Points</span>
+                <strong id="rewardPoints">450</strong>
+                <small>Available Points</small>
+            </div>
+
+            <div class="reward-symbol">🎁</div>
+
+        </div>
+
+        <div class="reward-grid">
+
+            <div class="reward-card">
+                <span>📱</span>
+                <h3>Mobile / Tablet</h3>
+                <strong>+50 Points</strong>
+                <p>Recycle an eligible device.</p>
+            </div>
+
+            <div class="reward-card">
+                <span>💻</span>
+                <h3>Laptop / Computer</h3>
+                <strong>+100 Points</strong>
+                <p>Recycle an eligible device.</p>
+            </div>
+
+            <div class="reward-card">
+                <span>🖥️</span>
+                <h3>Large Electronics</h3>
+                <strong>+150 Points</strong>
+                <p>Recycle eligible large electronics.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-info">
+
+            <span class="section-tag">CONTACT US</span>
+
+            <h2>Let's Make a Difference Together.</h2>
+
+            <p>
+                Have a question about recycling, pickup or rewards?
+                Send us a message.
+            </p>
+
+            <div class="contact-item">
+                <span>📧</span>
+                <div>
+                    <strong>Email</strong>
+                    <p>support@ecocycle.example</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📞</span>
+                <div>
+                    <strong>Phone</strong>
+                    <p>+91 XXXXX XXXXX</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <strong>Location</strong>
+                    <p>Maharashtra, India</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="contactName" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="contactEmail" placeholder="Your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea id="contactMessage" rows="6" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="primary-btn submit-btn" type="submit">
+                Send Message →
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="#home" class="logo footer-logo company-logo">
+              <img src="assets/logo.jpeg"
+              alt="E-WASTE Management and Recycling System logo">
+            </a>
+
+            <p>
+                Making e-waste recycling simple,
+                responsible and rewarding.
+            </p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+            <h4>Services</h4>
+            <a href="#pickup">E-Waste Pickup</a>
+            <a href="#tracking">Track Pickup</a>
+            <a href="#centers">Recycling Centers</a>
+            <a href="#rewards">Rewards</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 EcoCycle. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- ================= AUTH MODAL ================= -->
+<div class="modal" id="authModal">
+
+    <div class="auth-card">
+
+        <button class="close-btn" onclick="closeAuth()">×</button>
+
+        <div class="auth-logo">♻</div>
+
+        <h2 id="authTitle">Welcome Back</h2>
+
+        <p id="authSubtitle">
+            Login to manage your recycling journey.
+        </p>
+
+        <form id="authForm">
+
+            <div class="form-group signup-only hidden">
+                <label>Full Name</label>
+                <input type="text" id="authName" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="authEmail" placeholder="Your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="authPassword" placeholder="Password" required>
+            </div>
+
+            <button class="primary-btn full-btn" type="submit">
+                <span id="authButtonText">Login</span>
+            </button>
+
+        </form>
+
+        <p class="auth-switch">
+            <span id="authSwitchText">Don't have an account?</span>
+            <button onclick="toggleAuthMode()" id="authSwitchButton">
+                Create Account
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
